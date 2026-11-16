@@ -1,0 +1,268 @@
+
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f3f7f5;
+    color: #263b35;
+    padding: 25px;
+}
+
+.container {
+    max-width: 1050px;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #167d63, #20a17c);
+    color: white;
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(22, 125, 99, 0.15);
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+/* STATISTICS */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #e7eeea;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 18px rgba(0,0,0,0.07);
+}
+
+.stat-card h3 {
+    font-size: 13px;
+    color: #78877f;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.stat-card h2 {
+    font-size: 34px;
+    color: #167d63;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    font-size: 13px;
+    color: #89958f;
+}
+
+/* SECTIONS */
+.section {
+    background: white;
+    padding: 28px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    border: 1px solid #e7eeea;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+}
+
+.section h2 {
+    font-size: 20px;
+    margin-bottom: 22px;
+    color: #263b35;
+}
+
+/* FORM */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #40554b;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dce5df;
+    border-radius: 9px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #263b35;
+    background: #fff;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #167d63;
+    box-shadow: 0 0 0 3px rgba(22,125,99,0.1);
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* BUTTONS */
+button {
+    padding: 13px 20px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.save-btn {
+    background: #167d63;
+    color: white;
+    width: 100%;
+}
+
+.save-btn:hover {
+    background: #10664f;
+}
+
+.export-btn {
+    background: #e2f3ed;
+    color: #167d63;
+}
+
+.export-btn:hover {
+    background: #cceadd;
+}
+
+/* HISTORY */
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.history-header h2 {
+    margin-bottom: 0;
+}
+
+.entry {
+    border: 1px solid #e2e9e5;
+    padding: 18px;
+    border-radius: 11px;
+    margin-bottom: 13px;
+    background: #fcfefd;
+}
+
+.entry-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.entry strong {
+    color: #167d63;
+    font-size: 14px;
+}
+
+.entry p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #64736d;
+    overflow-wrap: anywhere;
+}
+
+.delete-btn {
+    background: #fee8e7;
+    color: #c0392b;
+    padding: 8px 13px;
+}
+
+.delete-btn:hover {
+    background: #fbd4d1;
+}
+
+.empty {
+    text-align: center;
+    padding: 35px;
+    color: #89958f;
+    background: #f9fbfa;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    color: #89958f;
+    font-size: 13px;
+    line-height: 1.8;
+    padding: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px;
+    }
+
+    header {
+        padding: 23px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .history-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .entry-top {
+        align-items: flex-start;
+    }
+
+}
